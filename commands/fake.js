@@ -26,3 +26,10 @@ message.channel.createWebhook(user.username, user.avatarURL).then(w => {
 message.reply(' **Eu não tenho permissão para criar um Webhook neste servidor, ou não encontrei este usuário.**')
 }
 }
+module.exports.config = {
+    name: "fake",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["fakeuser","userfake"]
+}
