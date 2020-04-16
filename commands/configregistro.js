@@ -10,3 +10,10 @@ exports.run = async (client, message, args) => {
       db.set(`config_${message.guild.id}`,role)
   message.channel.send(`registro configurado cargo: ${role}`)
 }
+module.exports.config = {
+    name: "cangigregistro",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["setrole", "setcargo"]
+}
