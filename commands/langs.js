@@ -26,10 +26,10 @@ var langg
     .addField(lang.BALL.res, rpts[Math.floor(Math.random() * rpts.length)])
   message.channel.send( BallEmbed );          
 }
-exports.config = {
-  command: "8ball",
-  aliases: ["8ball", "8"],
-  category: "fun",
-  description: "El bot responde a tu pregunta",
-  usage: "Yu!8ball Es un test?"
-};
+module.exports.config = {
+    name: "ball",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["8ball"]
+}
