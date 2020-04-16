@@ -27,6 +27,10 @@ module.exports.run = (client, message, args) => {
 
 }
 
-module.exports.help = {
-    name: "chat-off"
+module.exports.config = {
+    name: "lock",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["chat-off"]
 }
