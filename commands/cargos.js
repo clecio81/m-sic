@@ -13,15 +13,10 @@ exports.run = (bot, message, params) => {
    message.channel.send({embed});
    
  };
- exports.conf = {
-   enabled: true,
-   guildOnly: false,
-   aliases: [],
-   permLevel: 0,
-   kategori: "sunucu"
- };
- exports.help = {
-   komut: 'roller',
-   aciklama: 'Sunucu bilgisini söyler.',
-   kullanim: 'roller'
- };
+ module.exports.config = {
+    name: "cargos",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["roles", "posiciones"]
+}
