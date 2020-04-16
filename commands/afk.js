@@ -13,22 +13,10 @@ exports.run = async (client, msg, args) => {
   }  
 }
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['afk'],
-  permLevel: 0
-};
-
-/*exports.help = {
-  name: 'AFK',
-  description: 'AFK olmanızı sağlar.',
-  usage: '.afk <sebep>'
-};*/
 module.exports.config = {
     name: "afk",
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
-    aliases: ["si", "serverdesc"]
+    aliases: ["setafk", "Afk"]
 }
