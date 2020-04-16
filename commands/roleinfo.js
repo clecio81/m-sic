@@ -28,8 +28,10 @@ exports.conf = {
   kategori: "genel"
 };
 
-exports.help = {
-  komut: 'rolinfo',
-  description: 'rolinfo | Rol hakkında bilgi verir.',
-  usage: 'rolinfo <rolismi>'
-};
+module.exports.config = {
+    name: "roleinfo",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["inforole","cargoinfo"]
+}
