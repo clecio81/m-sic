@@ -16,3 +16,10 @@ exports.run = async (client, message, args) => {
             message.delete().catch(O_o=>{})
     message.channel.send(embed);
 }
+module.exports.config = {
+    name: "avatar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["photograph", "foto"]
+}
