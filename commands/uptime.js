@@ -1,15 +1,6 @@
 
 const { RichEmbed } = require("discord.js");
 
-  module.exports = {
-    config: {
-      name: 'uptime',
-      aliases: ['timeup'],
-      usage: '^uptime',
-      description: 'Displays the bot\'s uptime',
-      category: 'Miscellaneous',
-      accessableby: 'Users'
-    },
     
   run: async (client, message, args) => {
     function dur(ms) {
@@ -27,3 +18,10 @@ const { RichEmbed } = require("discord.js");
     message.channel.send(embed)
     }
   }
+module.exports.config = {
+    name: "uptime",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["timeup","tm"]
+}
