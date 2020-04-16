@@ -23,3 +23,10 @@ exports.run = (client,message,args)=>{
 
     message.channel.send(embed)
 }
+module.exports.config = {
+    name: "botinfo",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["bot", "information"]
+}
