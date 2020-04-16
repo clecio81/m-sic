@@ -32,8 +32,11 @@ message.channel.send(`o usuário ${banMember} foi banido com sucesso pelo **moti
     return console.log(e)
   }
         
-      
-  }
-exports.help = {
-    name: "ban"
+    }
+module.exports.config = {
+    name: "ban",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["Ban", "expulsar"]
 }
