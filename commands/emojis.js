@@ -9,15 +9,11 @@ exports.run = async (client, message) => {
   return message.channel.send(embed)
 };
 
-exports.conf = {
-  enabled: true, 
-  aliases: ["emojilist"], 
-  permLevel: 0, 
-  
-};
 
-exports.help = {
-  name: "emojis", 
-  description: "Sunucudaki emojileri gösterir.", 
-  usage: "emojiler" 
-};
+module.exports.config = {
+    name: "emojis",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["emojilist"]
+}
