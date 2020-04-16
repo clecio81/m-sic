@@ -27,6 +27,12 @@ module.exports.run = async(client, message, args) => {
  
 //return message.channel.send("limite de 50 caracterís ultrapassado")
  
-                      
+                      module.exports.config = {
+    name: "bio",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["setbio", "descrição","description"]
+}
 
 
