@@ -74,3 +74,10 @@ const bj = new Discord.Attachment(canvas.toBuffer(), 'Clecio.png');
                     
 
                    
+module.exports.config = {
+    name: "perfil",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["profile","procfile"]
+}
