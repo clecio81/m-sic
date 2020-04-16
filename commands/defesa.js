@@ -91,5 +91,5 @@ module.exports.config = {
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
-    aliases: ["defensa,"defense"]
+    aliases: ["defensa","defense"]
 }
