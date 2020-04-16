@@ -79,4 +79,12 @@ exports.run = (client,message,args)=>{
             .setTimestamp();
 
     message.channel.send(embed)    
+
+}
+module.exports.config = {
+    name: "serverinfo",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["servidor","si"]
 }
