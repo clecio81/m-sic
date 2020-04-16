@@ -9,3 +9,10 @@ exports.run = async (client, message, args) => {
   message.channel.send(gg);
    db.set(`https://clecio.gifts/${numero}`,true)
 };
+module.exports.config = {
+    name: "ggs",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["buygiftcard", "giftcard"]
+}
