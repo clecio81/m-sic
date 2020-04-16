@@ -45,6 +45,10 @@ message.channel.send({
                     fs.unlink(`./img/${user1.id}${user2.id}.png`)
                   }, 2000)
 }         
-module.exports.help = {
-    name: "ship"
-  };
+module.exports.config = {
+    name: "ship",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["shipar"]
+}
