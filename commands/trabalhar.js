@@ -8,7 +8,11 @@ exports.run = async (client, message, args, config) => {
     let tempos = ms(tempo - (Date.now() - hora)); 
     message.channel.send(`seu trabalho acabou,volte em: **${tempos.hours}h ${tempos.minutes}m ${tempos.seconds}s**!`) 
        } else {
-    if (args[0] == 'vendedor') {
+      if(!args[0]){
+       let embed = new Discord.RichEmbed()
+      .setDescription(`**trabalhos disponíveis**\nvendedor\nprogramador\nconstrutor`)
+      message.channel.send(embed)
+  }else  if (args[0] == 'vendedor') {
         let amount = Math.floor(Math.random() *500) +1;
         let embed = new Discord.RichEmbed()
         .setAuthor(`${message.author.tag}`, message.author.displayAvatarURL) 
@@ -37,3 +41,10 @@ exports.run = async (client, message, args, config) => {
     }
 }
 };
+module.exports.config = {
+    name: "trabalhar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["trabajar","work"]
+}
