@@ -17,3 +17,10 @@ canal.setTopic(topico).then(() => {
     })
 })
 }
+module.exports.config = {
+    name: "topico",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["topic","settopico","settopic"]
+}
