@@ -20,6 +20,10 @@ const lang = require(`../idioma/${langg}.json`)
     message.channel.send(embed);
 }
 
-module.exports.help = {
-    name: "beijar"
+module.exports.config = {
+    name: "beijar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["kiss", "beso"]
 }
