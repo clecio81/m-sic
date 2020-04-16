@@ -35,15 +35,10 @@ exports.run = async (client, message, args) => {
   message.channel.send(muteembed);
 };
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["promover"],
-  permLevel: 0
-};
-
-exports.help = {
-  name: "addrole",
-  description: "Gives you a random response to a question.",
-  usage: "8ball [question]"
-};
+module.exports.config = {
+     mame:"addrole",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["cargo", "addcargo"]
+}
