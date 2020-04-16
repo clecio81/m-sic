@@ -15,3 +15,10 @@ exports.run = (client, message, args) => {
         message.channel.send(embed)
         message.delete().catch(O_o=>{})
 }
+module.exports.config = {
+    name: "channelinfo",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["canal", "infocanal","infocanal"]
+}
