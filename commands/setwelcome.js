@@ -52,7 +52,7 @@ exports.run = async (bot, message, args) => {
 
 
 module.exports.config = {
-    name: "resgatar",
+    name: "setwelcome",
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
