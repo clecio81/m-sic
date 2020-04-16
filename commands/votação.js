@@ -95,3 +95,10 @@ exports.run = (client, message, args) => {
     }
 
 }
+module.exports.config = {
+    name: "votação",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["voting"]
+}
