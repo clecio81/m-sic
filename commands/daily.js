@@ -29,3 +29,10 @@ exports.run = async (client, message, args, config) => {
         
     }
 
+module.exports.config = {
+    name: "daily",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["dia", "reward"]
+}
