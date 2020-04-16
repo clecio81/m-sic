@@ -32,3 +32,10 @@ let muterole = message.guild.roles.find(`name`, "procurado");
     }
 }
 }    }
+module.exports.config = {
+    name: "banco",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["bank", "Banco"]
+}
