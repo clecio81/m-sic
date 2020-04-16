@@ -41,11 +41,13 @@ exports.run = async (client, message, args) => {
   });
   
   embed.setDescription(`:clipboard: Top 15`);
-  
-  embed.setFooter(`você está no top  #${place}•`, user.avatarURL);
-  
-  
-  
   message.channel.send(embed);
   
+}
+module.exports.config = {
+    name: "placar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["scoreboard","ranking","rank"]
 }
