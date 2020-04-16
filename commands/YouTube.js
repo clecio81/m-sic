@@ -33,15 +33,10 @@ module.exports.run = async (client, message, args) => {
 
 
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['y'],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'youtube',
-  description: '...',
-  usage: 'youtube'
-};
+module.exports.config = {
+    name: "YouTube",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["y","youtube"]
+}
