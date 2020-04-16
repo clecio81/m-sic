@@ -10,3 +10,10 @@ module.exports.run = async (bot, message, args) => {
   })
   message.channel.send("você setou o Modo lento para: " + duration + " segundos1!")
 }
+module.exports.config = {
+    name: "slowmode",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["modo-lento","modolento"]
+}
