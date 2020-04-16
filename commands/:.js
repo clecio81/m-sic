@@ -68,8 +68,10 @@ exports.run = (scott, message, args) => {
   }
 }
 
-exports.help = {
-  name: ":",
-  aliases: ["gray,"fotodray"],
-  diretorio: "Photoshop"
+module.exports.config = {
+    name: "profile",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["perfil"]
 }
