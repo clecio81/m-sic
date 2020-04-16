@@ -17,3 +17,10 @@ cd = (`você acaba de ganhar ${dinheiro} clCoisn`)
   
   } 
 }
+module.exports.config = {
+    name: "resgatar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["redeem"]
+}
