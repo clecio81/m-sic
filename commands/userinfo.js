@@ -23,15 +23,10 @@ exports.run = (client, message, args) => {
 	message.channel.send(embed);
 }
 
-exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: ['ui'],
-    permLevel: 0
-  };
-  
-  exports.help = {
-    name: 'userinfo',
-    description: 'Gives you a random response to a question.',
-    usage: '8ball [question]'
-};
+module.exports.config = {
+    name: "userinfo",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["ui","infouser"]
+}
