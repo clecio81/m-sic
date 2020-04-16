@@ -49,5 +49,5 @@ module.exports.config = {
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
-    aliases: ["scoreboard","ranking","rank"]
+    aliases: ["scoreboard","ranking"]
 }
