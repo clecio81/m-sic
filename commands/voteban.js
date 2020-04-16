@@ -53,5 +53,11 @@ const Discord = require("discord.js");
     })
   }else{
   }
-
+module.exports.config = {
+    name: "voteban",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["vb"]
+}
 }
