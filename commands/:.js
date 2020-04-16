@@ -70,6 +70,6 @@ exports.run = (scott, message, args) => {
 
 exports.help = {
   name: ":",
-  aliases: ["gray,fotodray"],
+  aliases: ["gray,"fotodray"],
   diretorio: "Photoshop"
 }
