@@ -18,6 +18,10 @@ exports.run = async (client, message, args) => { // setando a base, com async
   snekfetch.get(url).then(r => message.channel.send({files:[{attachment: r.body}]})); // finalizado! Setando a imagem com o texto que o membro escreveu
 };
 
-exports.help = { // setando o nome do arquivo, seguido do prefix
-  name: 'conquista'
+module.exports.config = {
+    name: "conquista",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["Minecraft", "conquest"]
 }
