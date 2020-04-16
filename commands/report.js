@@ -29,16 +29,10 @@ exports.run = async (client, message, args) => {
   } catch (e) { 
     return console.log(e)
   }
-exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: ['r'],
-    permLevel: 0
-  };
-  
-  exports.help = {
-    name: 'report',
-    description: 'Gives you a random response to a question.',
-    usage: '8ball [question]'
-}};
-  
+module.exports.config = {
+    name: "report",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["reporta","r"]
+}
