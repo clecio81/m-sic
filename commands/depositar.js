@@ -61,7 +61,10 @@ module.exports.run = async (bot, message, args) => {
   db.subtract(`money_${user.id}`, args[0])
   }
 }
-module.exports.help = {
-  name:"deposit",
-  aliases: ["dep"]
+module.exports.config = {
+    name: "depositar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["dep", "deposit"]
 }
