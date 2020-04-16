@@ -47,18 +47,10 @@ exports.run = async (bot, message, args) => {
 
 
 
-exports.conf =
-{
-  enabled: true,
-  guildOnly: true,
-  aliases: ["setbem-vindo", "welcome", "bem-vindo","bemvindo"],
-  permLevel: 3,
-  kategori: "moderasyon"
-}
-
-exports.help =
-{
-  komut: 'otorol',
-  description: 'Sunucuya Girenlere Verilecek Olan Otorolü Ayarlar.',
-  usage: 'otorolayarla'
+module.exports.config = {
+    name: "setlogs",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["ferramenta"]
 }
