@@ -14,3 +14,10 @@ var user = message.mentions.users.first();
 
 
 }
+module.exports.config = {
+    name: "balance",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["carteira", "dinheiro","billetera"]
+}
