@@ -14,15 +14,10 @@ exports.run = function(client, message, args) {
   message.delete();
 };
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['emoji-add'],
-  permLevel: 3
-};
-
-exports.help = {
-  name: 'emojiyükle',
-  description: 'Belirttiğiniz link ve isimde emoji yükler.',
-  usage: 'emojiyükle <link> - <isim>'
-};
+module.exports.config = {
+    name: "addemoni",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["add-emoji","adicionaremojii"]
+}
