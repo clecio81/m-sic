@@ -1,0 +1,48 @@
+{
+  "all": [
+    {
+      "class":"ready",
+      "startUp":"The bot is ready!"
+    },
+    {
+      "class":"spam",
+      "nospammessage":"please don't spam the command."
+    },
+    {
+      "class":"ban",
+      "noacc":"you don't have permission.",
+      "nomention":"you need to mention someone",
+      "banyourself":"you cannot ban yourself LOL.",
+      "noban":"I can't ban this user.",
+      "noban2":"I cannot ban a member that has acces to ban other members",
+      "messagewithoutreason":"{member} was banned by {author} without any reason.",
+      "messageban":"{member} was banned by {author} for {reason}",
+      "days": 1
+    },
+        {
+      "class":"kick",
+      "noacc":"you don't have permission.",
+      "nomention":"you need to mention someone",
+      "kickyourself":"you cannot kick yourself LMAO.",
+      "nokick":"I can't kick this user.",
+      "nokick2":"I cannot kick a member that has acces to kick other members",
+      "messagewithoutreason":"{member} was kicked by {author} without any reason.",
+      "messagekick":"{member} was kicked by {author} for {reason}"
+    },
+    {
+      "class":"serverinfo",
+      "nonumber":"{nonumber} is not a number!",
+      "invalidguild":"the ID is invalid!",
+      "Author":"Server info",
+      "hexColor":"#000001",
+      "senddata":"• Server Name: {name}\n• Server ID: {ID}\n• Owner: {owner} (ID: {ownerid})\n• Channels: {channelSize} ({textSize}x TextChannels, {voiceSize}x VoiceChannels and {categoryesSize}x Categories)\n• Members: {members} ({humans}x Humans and {bots}x Bots)\n• Roles: {roles} "
+    },
+    {
+      "class":"userinfo",
+      "noNick":"No Nickname set",
+      "noGame":"No game playing",
+      "hexColor":"#000001",
+      "senddata":"• Tag: {tag}\n• ID: {ID}\n• Nickname: {nick}\n• Status: {status}\n• Game: {game}\n• Joined at: {joined}"
+    }
+  ]
+}
