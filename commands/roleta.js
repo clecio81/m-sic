@@ -75,7 +75,10 @@ let colorbad = new Discord.RichEmbed()
 }
 
   
-  module.exports.help = {
-    name:"roulette",
-    aliases: ["roul"]
-  }
+  module.exports.config = {
+    name: "roleta",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["ruleta","roulette"]
+}
