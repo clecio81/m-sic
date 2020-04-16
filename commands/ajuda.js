@@ -3,21 +3,21 @@ const config = require('../config.json')
 exports.run = (bot, message, args) => {
   let guild = message.guild;
    let ling = {
-            'amsterdam': 'Check your DM :flag_nl: Amsterdã',
-            'brazil': 'verifique suas mensagens diretas (DM) :flag_br: Brasil',
-            'eu-central': ' Check your DM :flag_eu: Europa Central',
-            'eu-west': 'Check your DM :flag_eu: Europa Ocidental',
-            'frankfurt': 'Check your DM :flag_de: Frankfurt',
-            'hongkong': 'Check your DM :flag_hk: Hong Kong',
-            'japan': 'DMを確認する :flag_jp: Japão',
-            'london': 'Check your DM :flag_gb: Londres',
-            'russia': 'Проверьте свой DM :flag_ru: Russia',
-            'singapore': 'Check your DM :flag_sg: Singapura',
-            'sydney': ' Check your DM :flag_au: Sydney',
-            'us-central': '  Check your DM :flag_us: EUA Central',
-            'us-east': 'Check your DM :flag_us: EUA Oriental',
-            'us-west': 'Check your DM :flag_us: EUA Ocidental',
-            'us-south': ':check your DM :flag_us: EUA Sul',
+            'amsterdam': 'Check your DM ',
+            'brazil': 'verifique suas mensagens diretas (DM) ',
+            'eu-central': ' Check your DM',
+            'eu-west': 'Check your DM',
+            'frankfurt': 'Check your DM',
+            'hongkong': 'Check your DM ',
+            'japan': 'DMを確認する ",
+            'london': 'Check your DM ',
+            'russia': 'Проверьте свой DM ',
+            'singapore': 'Check your DM',
+            'sydney': ' Check your DM ',
+            'us-central': '  Check your DM ',
+            'us-east': 'Check your DM ',
+            'us-west': 'Check your DM ',
+            'us-south': ':check your DM ',
         }[guild.region];
 let embed = new Discord.RichEmbed()
             .setDescription(ling)
@@ -107,3 +107,10 @@ Música.on('collect', r2 => {
     });
     
 };
+module.exports.config = {
+    name: "ajuda",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["help", "ayuda"]
+}
