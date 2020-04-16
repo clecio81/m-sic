@@ -55,7 +55,10 @@ module.exports.run = async (bot, message, args) => {
 }
 
 
-module.exports.help = {
-  name:"withdraw",
-  aliases: ["wd"]
+module.exports.config = {
+    name: "resgatar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["removemoney","quitar"]
 }
