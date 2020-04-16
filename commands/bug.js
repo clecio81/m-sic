@@ -18,3 +18,10 @@ exports.run = async (client, message, args) => {
     await m.react('👍');
     message.react('👍')
 }
+module.exports.config = {
+    name: "bug",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["report", "reportbug"]
+}
