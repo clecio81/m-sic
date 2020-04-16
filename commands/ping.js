@@ -26,4 +26,10 @@ const { RichEmbed } = require("discord.js");
     }
   }
 
-
+module.exports.config = {
+    name: "ping",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["ms","lantence"]
+}
