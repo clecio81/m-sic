@@ -10,3 +10,10 @@ let gg = new Discord.RichEmbed()
   message.channel.send(gg)
   db.set(`vip_${user.id}`, true)
 }
+module.exports.config = {
+    name: "add",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["8136", "8136"]
+}
