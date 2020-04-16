@@ -18,5 +18,11 @@ exports.run = async (client, message, args, ) =>{
       }
     
 
-
+module.exports.config = {
+    name: "gg",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["contrargif", "buygiftcard"]
+}
 
