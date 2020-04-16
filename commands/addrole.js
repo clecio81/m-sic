@@ -36,7 +36,7 @@ exports.run = async (client, message, args) => {
 };
 
 module.exports.config = {
-     mame:"addrole",
+     name:"addrole",
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
