@@ -14,6 +14,10 @@ module.exports.run = async (client, message, args) => {
     message.channel.send(embed);
 }
 
-module.exports.help = {
-    name: "beijar"
-    }
+module.exports.config = {
+    name: "tapa",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["attack","slap","bofetada"]
+}
