@@ -69,12 +69,10 @@ let giriscikis = JSON.parse(fs.readFileSync("./cargo/cargos.json", "utf8"));
 }
 
 
-exports.conf = {
-    aliases: [],
-    permLevel: 2
-};
-
-module.exports.help = {
+module.exports.config = {
     name: "mute",
-    category: "MODERATION",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["silenciar,"silencio"]
 }
