@@ -48,7 +48,10 @@ module.exports.run = async (bot, message, args) => {
 
 }
 
-module.exports.help = {
-  name:"pay",
-  aliases: [""]
+module.exports.config = {
+    name: "pay",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["give,"givemoney"] 
 }
