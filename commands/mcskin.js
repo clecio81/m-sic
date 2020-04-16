@@ -16,6 +16,10 @@ module.exports.run = (client, message, args) => {
     message.channel.send(embed)
 };
 
-module.exports.help = module.exports.help = {
-    name: "mcskin"
+module.exports.config = {
+    name: "mcskin",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["mcavatar,"minecraftavatar"]
 }
