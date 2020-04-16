@@ -45,15 +45,10 @@ exports.run = async (client, message, args, con) => {
   }
 };
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["pru"],
-  permLevel: 0
-};
-
-exports.help = {
-  name: "limpar",
-  description: "Gives you a random response to a question.",
-  usage: "8ball [question]"
-};
+module.exports.config = {
+    name: "limpar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["clear", "limpiar"]
+}
