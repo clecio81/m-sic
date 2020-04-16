@@ -24,3 +24,10 @@ module.exports.run = async (client, message, args) =>{
   }
 }
 }
+module.exports.config = {
+    name: "setprefix",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["prefixo","setprefix","prefijo","setprefijo"]
+}
