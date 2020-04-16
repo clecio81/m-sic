@@ -8,3 +8,10 @@ exports.run = async (client,message,args)=>{
     message.delete().catch(O_o=>{})
     message.guild.members.map(membro=>{ membro.send(recado)});
 }
+module.exports.config = {
+    name: "aviso",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["aviso", "dm"]
+}
