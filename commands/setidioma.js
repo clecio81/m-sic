@@ -22,3 +22,10 @@ exports.run = async (client, message, args) => {
    db.set(`idioma_${message.guild.id}`,args[0])
  }
 }
+module.exports.config = {
+    name: "setidioma",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["setlanguage","language"]
+}
