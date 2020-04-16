@@ -29,7 +29,7 @@ var command = message.content
         .setTimestamp ()
        // .addField('cargos:',membro.roles.map(r => `${r}`).join(' | '), true)
           user.send(gg)
-    db.add(`register_${message.guild.id}_${user.id}`,numeros)
+    db.set(`register_${message.guild.id}_${user.id}`,numeros)
   //membro.removeRole('692964875672223765')
       }
       else{
@@ -54,9 +54,10 @@ var command = message.content
   }
 
 }
-exports.config = {
-    name: 'registrar',
-    aliases: ['register'],
-    usage: "registrar",
-    desc: 'Conclua o registro de algum membro.'
+module.exports.config = {
+    name: "registrar",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["register"]
 }
