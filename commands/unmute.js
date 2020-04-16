@@ -72,3 +72,10 @@ let giriscikis = JSON.parse(fs.readFileSync("./cargo/cargos.json", "utf8"));
   }
   
 }
+module.exports.config = {
+    name: "unmute",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["falar"]
+}
