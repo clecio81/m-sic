@@ -42,7 +42,10 @@ module.exports.run = async (client, message, args) => {
   message.channel.send(emojied).then(() => message.delete());
 };
 
-module.exports.help = {
-  categoria: 'diversão',
-  name: 'emojify'
+module.exports.config = {
+    name: "emojify",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["setemoji"]
 }
