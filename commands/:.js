@@ -69,9 +69,9 @@ exports.run = (scott, message, args) => {
 }
 
 module.exports.config = {
-    name: "profile",
+    name: ":",
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
-    aliases: ["perfil"]
+    aliases: ["gray"]
 }
