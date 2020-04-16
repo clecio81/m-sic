@@ -26,6 +26,10 @@ exports.run = async (client, message, args) => {
     });
 };
 
-exports.help = { 
-    name: `clima`
-};
+module.exports.config = {
+    name: "clima",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["weather", "Clima"]
+}
