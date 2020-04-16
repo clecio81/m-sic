@@ -61,3 +61,10 @@ exports.help = {
   name: 'warn'
 
 };
+module.exports.config = {
+    name: "warn",
+    description: "Pulls the serverinfo of the guild!",
+    usage: "!serverinfo",
+    accessableby: "Members",
+    aliases: ["aviso","advertencia"]
+}
