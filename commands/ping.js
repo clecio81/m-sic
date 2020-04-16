@@ -1,16 +1,7 @@
 const { RichEmbed } = require("discord.js");
 
 
-  module.exports = {
-    config: {
-      name: 'ping',
-      aliases: ['latency', 'ms'],
-      usage: '-ping',
-      description: 'Displays the bot\'s latency',
-      category: 'Miscellaneous',
-      accessableby: 'Users'
-    },
-    
+  
   run: async (client, message, args) => {
     message.channel.send(`${client.emojis.get('641823449043566617')} carregando, por favor aguarde..`).then(m => {
       let ping = m.createdTimestamp - message.createdTimestamp
@@ -31,5 +22,5 @@ module.exports.config = {
     description: "Pulls the serverinfo of the guild!",
     usage: "!serverinfo",
     accessableby: "Members",
-    aliases: ["ms","lantence"]
+    aliases: ["ms","lantency"]
 }
